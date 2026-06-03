@@ -9,6 +9,9 @@
     "./node.json": "./node.json",
     "./bundler.json": "./bundler.json"
   },
+  "scripts": {
+    "validate": "node scripts/validate-configs.mjs"
+  },
   "files": [
     "base.json",
     "node.json",
