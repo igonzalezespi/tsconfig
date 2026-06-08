@@ -78,12 +78,11 @@ Then extend the variant you want:
 ## Studio context
 
 This package is part of the studio's **homogenize-projects** effort: shared
-config lives in small public repos consumed by git reference, so every product
-(`a private project`, `a private TS monorepo`, `a Flutter project`, `aca`) compiles against one source of truth
-instead of drifting per-repo copies. It merges the previously-separate
-`a private TS monorepo` (`NodeNext` base) and `aca` (`Bundler` base, `verbatimModuleSyntax`,
-React Native variant) TypeScript configs into one `base` plus `node` / `bundler`
-variants. The companion
+config lives in small public repos consumed by git reference, so every studio
+project compiles against one source of truth instead of drifting per-repo copies.
+It merges the previously-separate `NodeNext` base and `aca`'s `Bundler` config
+(`verbatimModuleSyntax`, React Native variant) TypeScript configs into one `base`
+plus `node` / `bundler` variants. The companion
 [`@studio/eslint-config`](https://github.com/igonzalezespi/eslint-config) does the
 same for ESLint.
 
